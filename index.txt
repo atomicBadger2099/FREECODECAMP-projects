@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main id="main">
+        <h1 id="title">Dennis Ritchie</h1>
+        <p>The man who made computers as you know them</p>
+
+        <figure id="img-div">
+            <img id="image" src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2011/10/ritchie.jpg"
+                alt="picture of Dennis Ritchie during his time at Bell Labs" />
+            <figcaption id="img-caption">
+                Dennis Ritchie, working at Bell labs, creator of the C programming language.
+            </figcaption>
+        </figure>
+
+        <section id="tribute-info">
+            <h3 id="headline">Some key points about Dennis Ritchie, his life and work:</h3>
+            <ul>
+                <li><strong>1941</strong> - Born in Bronxville, New York</li>
+                <li>
+                    <strong>1963</strong> - graduated from Harvard University with degrees in physics and applied
+                    mathematics
+                </li>
+                <li>
+                    <strong>1967</strong> - began working at the Bell Labs Computing Science Research Center
+                </li>
+                <li>
+                    <strong>1969</strong> - co-created the Unix operating system along with Ken Thompson
+                </li>
+                <li>
+                    <strong>1972</strong> - led the team that created the C programming Language
+                </li>
+
+                <li><strong>1982</strong> - received the IEEE Emanuel R. Piore Award
+                </li>
+                <li><strong>1983</strong> - co-wrote the famous "K&R" book, <em> The C Programming Language</em>, with
+                    Brian
+                    Kernighan</li>
+                <li><strong>1983</strong> - co-received the Turing Award, the highest award in all of computer science
+                </li>
+                <li>
+                    <strong>1990</strong> - received the IEEE Richard W. Hamming Medal
+                </li>
+                <li>
+                    <strong>1999</strong> - received the National Medal of Technology and Innovation
+                </li>
+                <li>
+                    <strong>2011</strong> - received the Japan Prize
+                </li>
+                <li>
+                    <strong>2011</strong> - Dennis Ritchie dies of natural causes
+                </li>
+
+            </ul>
+            <blockquote
+                cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm">
+                <p>
+                    "The only way to learn a new programming language is by writing programs in it"
+                </p>
+                <cite>-- words of Dennis Ritchie</cite>
+            </blockquote>
+            <h3>
+                more about Dennis Ritchie:
+                <a id="tribute-link" href="https://en.wikipedia.org/wiki/Dennis_Ritchie" target="_blank">Wikipedia</a>
+            </h3>
+        </section>
+    </main>
+</body>
+
+</html>
