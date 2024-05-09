@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>souls survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Souls Gamer Survey</h1>
+    </header>
+
+    <article id="subheader_1">
+        <p id="description">This is a survey intended to gather information from the regular players of souls video
+            games.</p>
+    </article>
+
+    <article id="subheader_2">
+        <p id="instruction_1"><em>please enter the following information:</em></p>
+    </article>
+
+
+    <main id="main">
+        <form id="survey-form">
+            <article class="formspace">
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            </article>
+
+            <article class="formspace">
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+            </article>
+
+            <article class="formspace">
+                <label id="number-label" for="number">Age: <span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" />
+            </article>
+
+            <article class="formspace">
+                <p>Which of the following is your favorite souls game to play?</p>
+                <select id="dropdown" name="game" required>
+                    <option disabled selected value>Select game</option>
+                    <option value="ds1">Dark Souls 1</option>
+                    <option value="ds2">Dark Souls 2</option>
+                    <option value="ds3">Dark Souls 3</option>
+                    <option value="bb">Bloodborne</option>
+                    <option value="sk">Sekiro</option>
+                </select>
+            </article>
+
+            <article class="formspace">
+                <p>Do you enjoy the experience of playing souls or soulslike games?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure</label>
+            </article>
+
+            <article class="formspace">
+                <p>
+                    What do you like about souls games?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="gameplay" type="checkbox" />challenging gameplay</label>
+                <label><input name="prefer" value="graphics" type="checkbox" />realistic, 3d graphics</label>
+                <label><input name="prefer" value="rpg" type="checkbox" />tough RPG story</label>
+                <label><input name="prefer" value="design" type="checkbox" />tight level design</label>
+                <label><input name="prefer" value="other" type="checkbox" />some other quality</label>
+            </article>
+
+            <article class="formspace">
+                <p>Any further comments or suggestions not addressed by this survey?</p>
+                <textarea id="comments" name="comment" placeholder="Please enter your comment..."></textarea>
+            </article>
+
+            <article class="formspace">
+                <p>submit all answers:</p>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </article>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
