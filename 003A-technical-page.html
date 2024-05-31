@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-techdoc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar">
+        <header>
+            <h3>NAVIGATION:</h3>
+            <ul>
+                <li><a class="nav-link" href="#HTML_COMPONENTS">HTML COMPONENTS</a></li>
+                <li><a class="nav-link" href="#COMPONENT_STRUCTURE">COMPONENT STRUCTURE</a></li>
+                <li><a class="nav-link" href="#DOCTYPE_SECTION">DOCTYPE SECTION</a></li>
+                <li><a class="nav-link" href="#HTML_SECTION">HTML SECTION</a></li>
+                <li><a class="nav-link" href="#DOCUMENT_HEAD">DOCUMENT HEAD</a></li>
+                <li><a class="nav-link" href="#BODY_SECTION">BODY SECTION</a></li>
+                <li><a class="nav-link" href="#DOCUMENT_CONCLUSION">DOCUMENT CONCLUSION</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main id="main-doc" class="main-doc">
+
+        <section id="HTML_COMPONENTS" class="main-section">
+
+            <header>
+                <h1>HTML COMPONENTS</h1>
+            </header>
+
+            <p>Let's talk about <strong>HTML</strong>.</p>
+
+            <p>HTML stands for Hyper Text Markup Language.<br>
+                HTML is the language base for all shareable content on the Worldwide Web.</p>
+
+            <p>An HTML document <em>MAY CONTAIN:</em></p>
+            <ol>
+                <li>HTML for the document content</li>
+                <li>CSS(Cascading Style Sheets) for styling the page</li>
+                <li>Javascript code for providing additional functionality</li>
+            </ol>
+
+            <p>Of these three, HTML is the only one that MUST be there for a page to work. CSS and Javascript are
+                desirable but optional.</p>
+
+            <hr>
+        </section>
+
+        <section id="COMPONENT_STRUCTURE" class="main-section">
+
+            <header>
+                <h3>COMPONENT STRUCTURE</h3>
+            </header>
+
+            <p>At minimum, an HTML 5 document must have the following structure:</p>
+
+            <ol>
+                <li>a !DOCTYPE statement to declare the document type</li>
+                <li>a html section that contains the entire document to be shared.</li>
+                <li>a head section that contains information ABOUT the page.</li>
+                <li>a body section which displays information to be read within the browser.</li>
+            </ol>
+            <p>This completes the required parts of a HTML 5 page. There is a great deal to be said about
+                each section. However, that is the component basis of a HTML page.</p>
+
+            <hr>
+        </section>
+
+        <section id="DOCTYPE_SECTION" class="main-section">
+            <header>
+                <h3>DOCTYPE SECTION</h3>
+            </header>
+
+            <p>A !DOCTYPE statement declares the type on HTML being used. currently we are on HTML version 5. The method
+                for
+                version 5 is quite simple: simply include<br>
+                <code>&lt;!DOCTYPE html&gt;</code> at the very beginning of a document.
+            </p>
+
+            <p>HTML 5 did eliminate a LOT of technical difficulties, but the other versions may be used.
+                For instance, let us suppose you wanted to use a variant of HTML 4. The writer of this article would
+                recommend
+                against this practice, but it is possible to do so.</p>
+
+            <p>Here is the declaration for using HTML 4.01. Notice that it is much more complex.</p>
+
+            <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+            "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+
+            <p>After much searching and reading, I found no reasons to use HTML 4.01 over 5.0. However, one
+                is likely to see the HTML 4.01 document declaration on HTML documents that were written during an older
+                time but still function. These documents have not had their code upgraded but still work on more modern
+                browsers.</p>
+
+            <p>So it is entirely possible you may see this in older but functioning code. The recommendation of this
+                writer
+                is
+                to simply continue reading the page.</p>
+
+            <p>Note that there can be only one Doctype statement per HTML document.</p>
+
+            <hr>
+        </section>
+
+        <section id="HTML_SECTION" class="main-section">
+            <header>
+                <h3>HTML SECTION</h3>
+            </header>
+
+            <p>The html area serves as a container for the entire document. It is where the whole document is kept in
+                storage.
+                It should be noted that a language element should always be included with the html tag to assist
+                search engines.</p>
+
+            <code>example: &lt;html lang="en"&gt;&lt;/html&gt;</code>
+
+            <p>The html section is the root section of a document. This will become important on the introduction of
+                Javascript to add functionality to a document. In the beginning it is important to understand that this
+                is where the document sits.</p>
+
+            <p>Mostly it is simply important to know that the <code>&lt;html&gt;
+                &lt;/html&gt;</code> tags must be included, and where they must be placed.</p>
+            <p>Note that there can be only one HTML section per document.</p>
+
+            <hr>
+        </section>
+
+        <section id="DOCUMENT_HEAD" class="main-section">
+            <header>
+                <h3>DOCUMENT HEAD</h3>
+            </header>
+
+            <p>The head of a HTML document contains information which is ABOUT the document. This section does not
+                contain
+                content, that goes into another section. The information in the document head helps servers and browsers
+                access
+                and understand the document to make it readable to computer systems.</p>
+
+            <p>The information placed within the HTML document head is placed between
+                <code>&lt;head&gt; &lt;/head&gt;</code> tags.
+            </p>
+
+            <p>Information types in the document head will include:</p>
+            <ol>
+                <li>the document title (<code>&lt;title&gt;page title goes here&lt;/title&gt;</code>)</li>
+                <li>document metadata - used for media queries and search engines</li>
+                <li>links to other documents (<code>&lt;link href="URL"&gt;</code>)
+                </li>
+                <li>internal CSS code (<code>&lt;style&gt;CSS goes here&lt;/style&gt;</code>)</li>
+                <li>internal Javascript code (&lt;script&gt;&lt;/script&gt;)</li>
+            </ol>
+            <p>As is demonstrated here, the document head is a very busy and important part of a HTML document.</p>
+            <p>There can be only one Head per HTML document.</p>
+
+            <hr>
+        </section>
+
+        <section id="BODY_SECTION" class="main-section">
+
+            <header>
+                <h3>BODY SECTION</h3>
+            </header>
+
+            <p>The Body section of a HTML document contains the actual content of a HTML page. This
+                content may contain words, images, audio files, video files, multimedia files,
+                and/or links to other pages and files outside of itself.</p>
+
+            <p>The content in the Body section is placed between
+                <code>&lt;body&gt;&lt;/body&gt;</code> tags. There can be only one Body per HTML document.
+            </p>
+
+            <p>The content in the Body section will likely be structured in one of 2 ways.</p>
+            <ol>
+                <li>within a series of <code>&lt;div&gt;&lt;/div&gt;</code> tags, using id="ID" and class="CLASSNAME" as
+                    locators.
+                </li>
+                <li>using semantic tags, using id="ID" and class="CLASSNAME" as locators.</li>
+            </ol>
+
+            <p>An old practice exists using tables to align HTML content. This practice is out of favor in HTML 5
+                completely
+                due to the more sophisticated application of CSS, and due to the confusion it creates in working with
+                data. CSS is also its own topic.</p>
+
+            <p>Understanding the use of Body content is also its own diverse skill.</p>
+
+            <p>Note that in each html page, there can be only one body.</p>
+            <hr>
+        </section>
+
+        <section id="DOCUMENT_CONCLUSION" class="main-section">
+            <header>
+                <h3>DOCUMENT CONCLUSION</h3>
+            </header>
+
+            <p>The information in this document should be enough to understand basic page structure and
+                to begin using HTML. Other purposes may require more information.</p>
+
+            <p>None of this information is original. It is all taken from the HTML information provided
+                at:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" alt="W3SCHOOLS-HTML" target="_blank">
+                        W3Schools HTML Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                        alt="MDN-HTML" target="_blank">The MDN tutorial on HTML</a></li>
+            </ul>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
